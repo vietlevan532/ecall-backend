@@ -16,8 +16,8 @@ public class AmazonS3Configuration {
                 .region(Region.AP_SOUTHEAST_2)
                 .credentialsProvider(StaticCredentialsProvider.
                         create(AwsBasicCredentials.create(
-                        "your-S3-accessKey-Id",
-                        "your-S3-secretAccessKey")))
+                        "",
+                        "")))
                 .build();
     }*/
 }
