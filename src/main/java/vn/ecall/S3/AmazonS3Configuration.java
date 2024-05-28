@@ -10,14 +10,12 @@ import software.amazon.awssdk.services.s3.S3Client;
 @Configuration
 public class AmazonS3Configuration {
 
-    /*@Bean
+    @Bean
     public S3Client s3Client() {
         return S3Client.builder()
                 .region(Region.AP_SOUTHEAST_2)
                 .credentialsProvider(StaticCredentialsProvider.
-                        create(AwsBasicCredentials.create(
-                        "",
-                        "")))
+                        create())
                 .build();
-    }*/
+    }
 }
