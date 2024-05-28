@@ -10,7 +10,7 @@ import software.amazon.awssdk.services.s3.S3Client;
 @Configuration
 public class AmazonS3Configuration {
 
-    @Bean
+    /*@Bean
     public S3Client s3Client() {
         return S3Client.builder()
                 .region(Region.AP_SOUTHEAST_2)
@@ -19,5 +19,5 @@ public class AmazonS3Configuration {
                         "your-S3-accessKey-Id",
                         "your-S3-secretAccessKey")))
                 .build();
-    }
+    }*/
 }
