@@ -7,21 +7,19 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
-import vn.ecall.a3.AmazonS3Service;
-import vn.ecall.a3.BucketName;
+import vn.ecall.S3.AmazonS3Service;
+import vn.ecall.S3.BucketName;
 import vn.ecall.domain.User;
 import vn.ecall.domain.businessmodel.Order;
 import vn.ecall.domain.businessmodel.OrderDetail;
 import vn.ecall.domain.businessmodel.Product;
 import vn.ecall.repository.ProductRepository;
 import vn.ecall.service.dto.ProductDTO;
-import vn.ecall.web.rest.errors.BadRequestAlertException;
 
 import java.io.IOException;
 import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
-import java.util.UUID;
 import java.util.stream.Collectors;
 
 @Service

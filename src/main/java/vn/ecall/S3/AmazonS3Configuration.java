@@ -1,4 +1,4 @@
-package vn.ecall.a3;
+package vn.ecall.S3;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -16,11 +16,8 @@ public class AmazonS3Configuration {
                 .region(Region.AP_SOUTHEAST_2)
                 .credentialsProvider(StaticCredentialsProvider.
                         create(AwsBasicCredentials.create(
-                        "AKIAQ2LCZDR5UJS2PHX5",
-                        "nZwWw1/c3kIopaOcYwI7hTkgS6xQcYtMw6r3kvau")))
+                        "your-S3-accessKey-Id",
+                        "your-S3-secretAccessKey")))
                 .build();
     }
 }
-
-//"AKIAQ2LCZDR5UJS2PHX5",
-//"nZwWw1/c3kIopaOcYwI7hTkgS6xQcYtMw6r3kvau"
