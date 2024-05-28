@@ -1,0 +1,18 @@
+{
+  "properties": [
+    {
+      "name": "ecall.app.name",
+      "type": "java.lang.String",
+      "description": "Description for ecall.app.name."
+    },
+    {
+      "name": "spring.jpa.sql.init.schema-locations",
+      "type": "java.lang.String",
+      "description": "Description for spring.jpa.sql.init.schema-locations."
+    },
+    {
+      "name": "spring.aws.region",
+      "type": "java.lang.String",
+      "description": "Description for spring.aws.region."
+    }
+  ] }

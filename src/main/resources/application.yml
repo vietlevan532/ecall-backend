@@ -1,0 +1,51 @@
+logging:
+  level:
+    vn.ecall:
+      DEBUG
+
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ecall
+    username: root
+    password:
+
+  jpa:
+    database: MySQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    #open-in-view: true #Turn on spring boot default open in view
+
+  aws:
+    region: ap-southeast-2
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: hoangvanminhhust@gmail.com  #Replace this field with your Gmail username.
+    password: 3734135z           #Replace this field with your Gmail password/App password.
+    protocol: smtp
+    properties.mail.smtp:
+      auth: true
+      starttls.enable: true
+      ssl.trust: smtp.gmail.com
+
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 5MB
+
+  codec:
+    max-in-memory-size: 5MB
+
+# ===================================================================
+# Ecall specific properties
+#
+# Full reference is available at: https://www.jhipster.tech/common-application-properties/
+# ===================================================================
+
+ecall:
+  mail:
+    from: hoangvanminhhust@gmail.com
+    to: hoangvanminhhust@gmail.com

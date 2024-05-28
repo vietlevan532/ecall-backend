@@ -1,0 +1,14 @@
+services:
+  mysql:
+    image: mysql
+    container_name: mysqldb
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: Minh1592
+      MYSQL_DATABASE: ecall
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+volumes:
+  mysql-data:
